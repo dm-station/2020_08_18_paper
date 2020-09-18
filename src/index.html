@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+	<meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport">
+    <meta name="screen-orientation" content="portrait">
+    <meta name="x5-orientation" content="portrait">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>特仑苏谷粒牛奶</title>
+    <script>
+        setFontSize()
+        window.onresize = function () { setFontSize() }
+        function setFontSize () { document.getElementsByTagName('html')[0].style.fontSize = parseInt(document.documentElement.clientWidth) / 7.5 + 'px' }
+    </script>
+    <!-- <script src="//cdn.campaign.realh5.cn/2018/meizu/vconsole.min.js"></script> -->
+    
+    <link href="./css/reset.css" type="text/css" rel="stylesheet">
+    <link href="./css/swiper-bundle.min.css" type="text/css" rel="stylesheet">
+    
+   
+    <script>
+    /* eslint-disable */ 
+        // +function(window, document, link) { var _dmp = window['BHDmp'] =
+        // function () { _dmp.track ? _dmp.track.apply(_dmp, arguments) :_dmp.queue.push(arguments); }; _dmp.queue = []; 
+        // var dom =document.createElement('script'); dom.async = true; dom.src = link; 
+        // var ele =document.getElementsByTagName('script')[0];
+        // ele.parentNode.insertBefore(dom, ele); }
+        // (window, document, '//v.behe.com/bhdmp.js'); BHDmp('option', { domain: '//digital.mengniu.com.cn' });
+        // BHDmp('init', 181, '^^site_key^^',54);
+
+        function getRequestParams (strname) {
+            var url = location.search // 获取url中"?"符后的字串
+            var theRequest = new Object()
+            if (url.indexOf('?') != -1) {
+                var str = url.substr(1)
+                var strs = str.split('&')
+                for (var i = 0; i < strs.length; i++) {
+                theRequest[strs[i].split('=')[0]] = decodeURI(strs[i].split('=')[1])
+                }
+            }
+            return theRequest[strname]
+        }
+        var channel = getRequestParams('channel')
+        switch (channel) {
+            case 'moments':
+            +function(window, document, link) { var _dmp = window['BHDmp'] =
+            function () { _dmp.track ? _dmp.track.apply(_dmp, arguments) :
+            _dmp.queue.push(arguments); }; _dmp.queue = []; var dom =
+            document.createElement('script'); dom.async = true; dom.src = link; var ele =
+            document.getElementsByTagName('script')[0];
+            ele.parentNode.insertBefore(dom, ele); }(window, document, '//v.behe.com/bhdmp.js'); BHDmp('option', { domain: '//digital.mengniu.com.cn' });
+            BHDmp('init', 188, '^^site_key^^',54);
+            break
+            case 'people':
+            +function(window, document, link) { var _dmp = window['BHDmp'] =
+            function () { _dmp.track ? _dmp.track.apply(_dmp, arguments) :
+            _dmp.queue.push(arguments); }; _dmp.queue = []; var dom =
+            document.createElement('script'); dom.async = true; dom.src = link; var ele =
+            document.getElementsByTagName('script')[0];
+            ele.parentNode.insertBefore(dom, ele); }(window, document, '//v.behe.com/bhdmp.js'); BHDmp('option', { domain: '//digital.mengniu.com.cn' });
+            BHDmp('init', 189, '^^site_key^^',54);
+            console.log('人民日报')
+            break
+            default:
+            console.log('其他')
+            +function(window, document, link) { var _dmp = window['BHDmp'] =
+            function () { _dmp.track ? _dmp.track.apply(_dmp, arguments) :
+            _dmp.queue.push(arguments); }; _dmp.queue = []; var dom =
+            document.createElement('script'); dom.async = true; dom.src = link; var ele =
+            document.getElementsByTagName('script')[0];
+            ele.parentNode.insertBefore(dom, ele); }(window, document, '//v.behe.com/bhdmp.js'); BHDmp('option', { domain: '//digital.mengniu.com.cn' });
+            BHDmp('init', 190, '^^site_key^^',54);
+            break
+        }
+</script>
+</head>
+
+<body>
+	<div id="main">
+        <div id="p1" class="page">
+            <img class="img" src="./img/loading.gif">
+            <!-- <img class="img" src="./img/loading剪刀开.jpg"> -->
+            
+            <img class="num abs" src="./img/num.png">
+            <img class="scissors abs" src="./img/scissors1.png">
+            <p class="progress">0</p>
+        </div>
+        
+        <div id="p2" class="page none">
+            <canvas id="game" style="width: 100%;height: 100%;"></canvas>
+            <img class="tvc_bottom videoBtn" src="./img/big/tvc_bottom.png">
+        </div>
+
+        <div id="p3" class="page none">
+            <img class="abs tvc_bg" src="./img/big/tvc_bg.jpg">
+            <!-- <img class="abs tvc_bg" src="./img/tvc_s.jpg"> -->
+            <img class="tvc_bottom" src="./img/big/tvc_bottom.png">
+            <img class="abs tvc_btn" src="./img/big/tvc_btn.png">
+
+            <!-- 下半部分 -->
+            
+            <div class="rel homeBox">
+                <img class="abs home_bg" src="./img/big/home_bg.jpg">
+                <div id="swiper">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class='swiper-slide'>
+                                <img src='./img/big/swiper1.png'>
+                            </div>
+                            <div class='swiper-slide'>
+                                <img src='./img/big/swiper2.png'>
+                            </div>
+                            <div class='swiper-slide'>
+                                <img src='./img/big/swiper3.png'>
+                            </div>
+                            <div class='swiper-slide'>
+                                <img src='./img/big/swiper4.png'>
+                            </div>
+            
+                        </div>
+                    </div>
+                </div>
+                <!-- <img class="abs swiper1" src="./img/big/swiper1.png"> -->
+                <img class="abs arrow_left" src="./img/big/arrow_left.png">
+                <img class="abs arrow_right" src="./img/big/arrow_right.png">
+                <img class="abs home" src="./img/big/home.png">
+            </div>
+        </div>
+
+        <div id="p4" class="page none index9">
+            <canvas id="game2" style="width: 100%;height: 100%;"></canvas>
+            <img class="close none" src="./img/close.png">
+        </div>
+    </div>
+    <script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="./js/jsmpeg.min.js"></script>
+    <script type="text/javascript" src="./js/swiper-bundle.min.js"></script>
+    <script src="//res.wx.qq.com/open/js/jweixin-1.6.0.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript">document.write(unescape("%3Cspan id='cnzz_stat_icon_1279222619'%3E%3C/span%3E%3Cscript src='https://w.cnzz.com/q_stat.php%3Fid%3D1279222619' type='text/javascript'%3E%3C/script%3E"))
+</script>
+</body>
+
+</html>
